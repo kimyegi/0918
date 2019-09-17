@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>하루 단백질 권장 섭취량</title>
+	<style type="text/css">
+		input{background: #dff;
+			font-size: 25px;
+			padding: 10px;
+			border:none;
+			box-shadow: 0px 0px 4px black inset;
+			border-radius: 5px;
+			
+
+		}
+		body{background: #b8c8d1}
+		p{font-size: 11px;}
+		body{text-align: center;}
+		div{font-size: 20px;}
+		@font-face {font-size: 8px;} 
+	</style>
+</head>
+<body>
+	<h1>하루 단백질 권장 섭취량</h1>
+		
+		<p>*단백질 최소 섭취량 (성인기준) : 체중 1kg당 0.85g 증가</p>
+<br>
+
+	<img width="500" height="300"  src="protein.jpg">
+
+	<p>몸무게(kg)</p>
+
+	 0<input type="range" id="mweight" min="0" max="200">200
+	<div id="myw"> 100 </div><br><br>
+
+
+	<div id="monitor">당신의 하루 단백질 섭취량은 0g입니다.</div>
+
+	
+	<script>
+		mweight.oninput = function(){
+			myw.innerHTML = mweight.value;
+			var sage = Number(mweight.value) * 0.85;
+			monitor.innerHTML = "당신의 하루 단백질 섭취량은" + sage +"g입니다";
+			
+		}
+
+		
+
+
+	</script>
+ <br>
+	<input type="button" onclick="alert('냠냠!!!!(⁎⁍̴̆Ɛ⁍̴̆⁎)')" value="CLICK!">
+
+ <br>
+ <br>
+	<div class="footer">
+
+	<p class="small center">copyright & copy;
+
+
+	2019 HKNU communication design , KIM YE GI . all rights reserved.</p>
+
+ 
+
+	</div>
+
+
+	<style>
+
+	.small{font-size: 12px;} 
+
+
+	.center {text-align: center;}
+
+
+	.footer { background: #555; height: 50px;
+		color: white; padding-top: 30px; }
+
+
+	</style>
+
+
+</div>
+	
+</body>
+</html> 
